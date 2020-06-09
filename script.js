@@ -118,7 +118,8 @@ function draw(){    ctx.drawImage(imgSea,0,0);
     ctx.font='14px Verdana';
     ctx.fillText ('Score: '+score,10,20);
     getTime();//отображаем время игры
-   
+    ctx.fillText('x: '+x+"y: "+y, 320,20);
+    
     requestAnimationFrame(draw);
 
 }
