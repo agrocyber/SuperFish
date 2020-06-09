@@ -105,9 +105,9 @@ function draw(){    ctx.drawImage(imgSea,0,0);
     }
     //проверяем, чтобы рыбка не коснулась границ
     if (fish.x<=0 || 
-        fish.x+fish.width>=620 ||
+        fish.x+fish.width>=cvs.width ||
         fish.y<=0 ||
-        fish.y+fish.width >= 580 )
+        fish.y+fish.width >= cvs.height )
              location.reload(); 
     
 
