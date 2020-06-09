@@ -119,7 +119,7 @@ function draw(){    ctx.drawImage(imgSea,0,0);
     ctx.fillText ('Score: '+score,10,20);
     getTime();//отображаем время игры
     ctx.fillText('x: '+fish.x+"y: "+fish.y, 320,20);
-    
+    console.log(fish.x);
     requestAnimationFrame(draw);
 
 }
