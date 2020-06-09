@@ -108,7 +108,9 @@ function draw(){    ctx.drawImage(imgSea,0,0);
         fish.x+fish.width>=cvs.width ||
         fish.y<=0 ||
         fish.y+fish.width >= cvs.height){
-             alert('hi')
+             fish.x=30;
+             fish.y=200;
+             location.reload();
     }
 
     ctx.drawImage(imgFish,fish.x,fish.y,fish.width,fish.height);
